@@ -6,12 +6,13 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Calendar } from "@/components/ui/calendar"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
+
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       {/* Background Image */}
       <Image
-        src="/hero.png"
+        src= "/assets/hero.png"
         alt="Scenic coastal view with lighthouse"
         fill
         className="object-cover brightness-75"
@@ -21,9 +22,10 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center space-y-8 px-4">
         <div className="space-y-4">
-          <p className="text-white text-sm md:text-base tracking-wider uppercase">
-            — Discover The World —
-          </p>
+        <p className="font-comforter-brush text-mikado-yellow text-fs-3 tracking-wider uppercase">
+  — Discover The World —
+</p>
+
           <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif max-w-4xl mx-auto leading-tight">
             Enjoy Luxurious Adventures Trip With Us
           </h1>
