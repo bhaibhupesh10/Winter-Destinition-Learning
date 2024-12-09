@@ -11,7 +11,7 @@ export default function Hero() {
     <div className="relative min-h-screen flex items-center justify-center">
       {/* Background Image */}
       <Image
-        src="/placeholder.svg"
+        src="/hero.png"
         alt="Scenic coastal view with lighthouse"
         fill
         className="object-cover brightness-75"
