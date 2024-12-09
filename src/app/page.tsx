@@ -3,7 +3,7 @@ import Hero from '@/components/CustomComponents/Hero'
 import About from '@/components/CustomComponents/About'
 import WhatWeOffer from "@/components/CustomComponents/WhatWeOffer"
 import About2 from "@/components/CustomComponents/About2"
-
+import Footer from '@/components/CustomComponents/Footer'
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
     <WhatWeOffer />
     <About></About>
     <About2 />
+    <Footer></Footer>
     </>
   )
 }
