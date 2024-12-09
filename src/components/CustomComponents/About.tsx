@@ -12,7 +12,7 @@ export default function About() {
           <div className="relative">
             <div className="relative w-[600px] h-[600px] rounded-full overflow-hidden">
               <img
-                src="/placeholder.svg?height=600&width=600"
+                src="/assets/about.webp"
                 alt="Group of friends on vacation"
                 className="w-full h-full object-cover"
               />
@@ -21,13 +21,21 @@ export default function About() {
             <div className="absolute top-8 left-8 bg-white rounded-full py-2 px-4 shadow-lg flex items-center gap-2">
               <div className="flex -space-x-2">
                 <Avatar className="border-2 border-white">
-                  <AvatarFallback>A1</AvatarFallback>
+                  <AvatarFallback>
+
+                    <img src="/assets/about/profile1.png" className="w-full h-full"></img>
+                  </AvatarFallback>
                 </Avatar>
                 <Avatar className="border-2 border-white">
-                  <AvatarFallback>A2</AvatarFallback>
+                  <AvatarFallback>
+                    
+                  <img src="/assets/about/profile2.png" className="w-full h-full"></img>
+                    </AvatarFallback>
                 </Avatar>
                 <Avatar className="border-2 border-white">
-                  <AvatarFallback>A3</AvatarFallback>
+                  <AvatarFallback>
+                  <img src="/assets/about/profile3.png" className="w-full h-full"></img>
+                    </AvatarFallback>
                 </Avatar>
               </div>
               <span className="text-sm font-medium">
