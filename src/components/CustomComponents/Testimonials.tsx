@@ -22,7 +22,7 @@ const testimonials: Testimonial[] = [
     role: "Happy Client",
     rating: 66,
     content: "Nemo enim ipsam voluptatem quia voluptas sit asperna aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciuntporro quisuam est, rui dolorem ipsum quia dolor sit amet, consectetur adieisci velit sed ruia.",
-    image: "/placeholder.svg?height=400&width=400"
+    image: "/assets/About/profile1.png"
   },
   {
     id: 2,
@@ -30,16 +30,20 @@ const testimonials: Testimonial[] = [
     role: "Satisfied Customer",
     rating: 78,
     content: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-    image: "/placeholder.svg?height=400&width=400"
+    image: "/assets/About/profile2.png" // Add a different image here
   },
 ]
 
 const floatingAvatars = [
-  { top: "10%", left: "15%", size: 80, delay: 0 },
-  { top: "20%", left: "45%", size: 100, delay: 1 },
-  { top: "40%", left: "25%", size: 90, delay: 2 },
-  { top: "60%", left: "40%", size: 110, delay: 1.5 },
-  { top: "70%", left: "15%", size: 120, delay: 0.5 },
+  { top: "10%", left: "15%", size: 80, delay: 0, image: "/assets/About/profile1.png" },
+  { top: "20%", left: "45%", size: 100, delay: 1, image: "/assets/About/profile2.png" },
+  { top: "40%", left: "25%", size: 90, delay: 2, image: "/assets/About/profile3.png" },
+  { top: "60%", left: "40%", size: 110, delay: 1.5, image: "/assets/About/profile4.png" },
+  { top: "50%", left: "15%", size: 120, delay: 0.5, image: "/assets/About/profile5.png" },
+  { top: "45%", left: "5%", size: 120, delay: 0.5, image: "/assets/About/profile6.png" },
+  { top: "15%", left: "25%", size: 120, delay: 0.5, image: "/assets/About/profile7.png" },
+  { top: "40%", left: "35%", size: 120, delay: 0.5, image: "/assets/About/profile8.png" },
+  { top: "70%", left: "25%", size: 120, delay: 0.5, image: "/assets/About/profile9.png" },
 ]
 
 export default function TestimonialsSection() {
@@ -71,7 +75,7 @@ export default function TestimonialsSection() {
               style={{ width: avatar.size, height: avatar.size }}
             >
               <Image 
-                src="/placeholder.svg?height=400&width=400" 
+                src={avatar.image} // Use the dynamic image source
                 alt="Testimonial avatar" 
                 width={avatar.size} 
                 height={avatar.size}
@@ -87,8 +91,8 @@ export default function TestimonialsSection() {
           <div className="hidden lg:block" aria-hidden="true" />
 
           {/* Right side - testimonial content */}
-          <div className="relative z-10">
-            <p className="text-red-500 mb-2">Testimonials</p>
+          <div className="relative z-10 ml-10">
+            <p className=" mb-2 text-mikado-yellow text-2xl font-comforter-brush">Testimonials</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
               What Our Customers Have To Say
             </h2>
@@ -146,4 +150,3 @@ export default function TestimonialsSection() {
     </section>
   )
 }
-
