@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 
+
 export default function About() {
   return (
     <div className="relative min-h-screen bg-[#FDF8F4] overflow-hidden">
